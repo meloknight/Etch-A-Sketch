@@ -1,0 +1,50 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.options-container {
+    height: 3rem;
+    width: 100vw;
+    background-color: rgb(255, 255, 216);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options-container > button {
+    background-color: rgb(216, 138, 252);
+    padding: 0.5rem 1.4rem;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    color: wheat;
+}
+
+.options-container > button:hover {
+    background-color: rgb(219, 216, 255);
+    color: black;
+}
+
+.grid-container {
+    height: calc(100vh - 3rem);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    place-items: center;
+}
+
+.square {
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s;
+}
+
+.shaded {
+    background-color: rgb(133, 41, 151);
+}
+
+
